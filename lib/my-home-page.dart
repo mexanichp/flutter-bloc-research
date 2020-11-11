@@ -40,7 +40,7 @@ class MyHomePage extends StatelessWidget {
         floatingActionButton: Builder(
           builder: (context) => FloatingActionButton(
             onPressed: () {
-              context.bloc<ExampleBloc>().add(ExampleLoadingFire());
+              context.read<ExampleBloc>().add(ExampleLoadingFire());
             },
             tooltip: 'Fire loading',
             child: Icon(Icons.refresh),
